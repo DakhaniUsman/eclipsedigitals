@@ -36,8 +36,32 @@ header{
     margin: auto;
 }
 
-.desktop-navbar .logo{
-    width: 30%;;
+.desktop-navbar .logo-container{
+    width: 30%;
+    height: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container .logo{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-navbar .navigations-container{
+    width: 40%;
+    height: 100%;
+    border: 2px solid red;
+}
+
+.desktop-navbar .main-btn-container{
+    width: 30%;
     height: 100%;
     border: 2px solid red;
 }
