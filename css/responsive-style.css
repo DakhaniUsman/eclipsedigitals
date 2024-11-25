@@ -1,20 +1,37 @@
-@media screen and (max-width : 1400px){
+@media screen and (max-width : 1400px) {}
+
+
+@media screen and (max-width : 1200px) {
+    .work-card-3 {
+        margin-top: -15%;
+    }
+
+
+    .work-card-5 {
+        margin-top: -70%;
+    }
+
+    .work-card-6{
+        margin-top: -45%;
+    }
+}
+
+@media screen and (max-width : 992px) {
 
 }
 
+@media screen and (max-width : 768px) {
+    .work-card-3 {
+        margin-top: 0%;
+    }
 
-@media screen and (max-width : 1200px){
+    .work-card-5 {
+        margin-top: 0%;
+    }
 
+    .work-card-6{
+        margin-top: 0%;
+    }
 }
 
-@media screen and (max-width : 992px){
-
-}
-
-@media screen and (max-width : 768px){
-
-}
-
-@media screen and (max-width : 576px){
-
-}
+@media screen and (max-width : 576px) {}

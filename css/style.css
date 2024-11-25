@@ -189,7 +189,7 @@ h1 {
   }
 
   .wrapper{
-    padding: 2em 1em 5em;
+    padding: 5em 1em 5em;
   }
 
 /*
@@ -306,7 +306,9 @@ h1 {
   text-align: center;
   padding: 2em 2em;
   border-radius: 10px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: auto;
 }
@@ -336,9 +338,8 @@ h1 {
 }
 
 .work-container{
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
