@@ -358,7 +358,6 @@ h1 {
 
 
 .counter-section h2,
-.testimonial-section h2,
 .book-food-text h2 {
   color: var(--primary-color);
   font-size: 3rem;
@@ -374,6 +373,10 @@ h1 {
 
 .testimonial-section{
   background-color: var(--primary-color);
+}
+
+.testimonial-section h2{
+  color: var(--white-color) ;
 }
 
 .testimonial-section .carousel-inner{
@@ -424,7 +427,7 @@ h1 {
   background: url("../assets/img/cta.avif") no-repeat center;
   background-size: cover;
   background-attachment:fixed ;  /* parallax effect main*/
-  background-position: 0 71.9125px; /* static background position */
+  background-position:center; /* static background position */
   padding: 4.37rem 0;
 }
 

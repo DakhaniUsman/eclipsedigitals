@@ -32,6 +32,15 @@
     .work-card-6{
         margin-top: 0%;
     }
+
+    .testimonial-section .carousel-item{
+        padding: 20rem 2rem;
+    }
 }
 
-@media screen and (max-width : 576px) {}
+@media screen and (max-width : 576px) {
+
+    .testimonial-section .carousel-item{
+        padding: 25rem 2rem;
+    }
+}
