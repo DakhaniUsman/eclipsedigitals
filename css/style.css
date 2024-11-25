@@ -198,9 +198,6 @@ h1 {
 ==========================================
 */
 
-.navbar{
-  height: 3.5em !important;
-}
 
 .navigation-wrap{
     position: fixed;
@@ -209,7 +206,12 @@ h1 {
     z-index: 1000;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    background-color: var(--white-color);
+    background-color: var(--white-color) !important;
+}
+
+.navigation-wrap .navbar-nav{
+  width: 100%;
+  background-color: var(--white-color);
 }
 
 
