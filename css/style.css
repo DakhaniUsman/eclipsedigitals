@@ -45,7 +45,7 @@ ol {
     --primary-font: 'Roboto', sans-serif;
     --secondry-font: 'Quicksand', sans-serif;
   }
-  
+
 html {
   scroll-behavior: smooth;
 }
@@ -189,7 +189,7 @@ h1 {
   }
 
   .wrapper{
-    padding: 2em 1em;
+    padding: 2em 1em 5em;
   }
 
 /*
@@ -264,9 +264,9 @@ h1 {
 
 .top-banner{
     position: relative;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 100vh;
     padding: 10rem 5rem;
@@ -297,25 +297,29 @@ h1 {
 ==========================================
 */
 
-.service-container{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  /* border: 2px solid red; */
-}
 
 
 .service-card{
-  width: 300px;
+  max-width: 300px;
   height: 300px;
   border: 2px solid var(--primary-color);
   text-align: center;
   padding: 2em 2em;
   border-radius: 10px;
+  display: block;
+  align-items: center;
+  margin: auto;
+}
+
+
+.service-card img{
+  width: auto;
+  height: 60%;
+  margin-bottom: 10px;
 }
 
 .service-card:hover{
-  box-shadow: 0px 0px 30px #0a0a0a;  
+  box-shadow: 0px 0px 30px #0a0a0a;
   background-color: var(--primary-color);
   color: var(--text-gray);
   transition: all .4s ease-out 0s;
@@ -323,7 +327,7 @@ h1 {
 }
 
 
-.service-card:hover .service-card a{
+.service-card:hover .service-card > h3{
   color: var(--white-color) !important;
 }
 
@@ -336,6 +340,8 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+
 
 .counter-section h2,
 .testimonial-section h2,
