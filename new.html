@@ -5,40 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./responsive-styles.css">
 </head>
 <body>
     <div id="main">
         <div class="main-container">
 
             <header>
-                <nav class="desktop-navbar">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <a href="#">Eclipse Digitals</a>
+
+                <div class="desktop-navbar">
+
+                    <div class="logo">
+                        <h2><a href="#">Portfolio</a></h2>
+                    </div>
+
+                    <nav class="desktop-navbar-list">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="cta">
+                        <div class="cta-btn">
+                            <a href="#contact">
+                                Get In Touch
+                                <i class='bx bx-right-arrow-alt btn-icon' ></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="navigations-container">
-                        <div class="navigations">
-                            <ul class="nav-list">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                </div>
+
+
+                <div class="mobile-navbar">
+
+                    <div class="logo">
+                        <h2><a href="#">Portfolio</a></h2>
+                    </div>
+
+                    <div class="mobile-navbar-right">
+                        <div class="cta">
+                            <div class="cta-btn">
+                                <a href="#contact">
+                                    Get In Touch
+                                    <i class='bx bx-right-arrow-alt btn-icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hamMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="offScreenMenu" if="offScreenMenu">
+                        <nav class="mobile-navbar-list">
+                            <ul>
+                                <li onclick="hide()"><a href="#home">Home</a></li>
+                                <li onclick="hide()"><a href="#about">About</a></li>
+                                <li onclick="hide()"><a href="#services">Services</a></li>
+                                <li onclick="hide()"><a href="#portfolio">Portfolio</a></li>
+                                <li onclick="hide()"><a href="#contact">Contact</a></li>
+                                <li onclick="hide()">
+                                    <div class="cta-btn">
+                                        <a href="#contact">
+                                            Get In Touch
+                                            <i class='bx bx-right-arrow-alt btn-icon' ></i>
+                                        </a>
+                                    </div>
+                                </li>
                             </ul>
-                        </div>
+                        </nav>
                     </div>
-                    <div class="main-btn-container">
-                        <div class="main-btn">
-                            <button class="btn">
-                                <a href="#">123 456 789</a>
-                            </button>
-                        </div>
-                    </div>
-                </nav>
+                </div>
+
             </header>
+
+            <section id="home">
+                <div class="home-container">
+                    
+                </div>
+            </section>
 
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

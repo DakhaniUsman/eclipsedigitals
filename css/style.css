@@ -21,9 +21,9 @@ a:hover {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--primary-color) !important;
-}
+/* a:hover {
+  color: var(--primary-color);
+} */
 
 ul,
 ol {
@@ -234,7 +234,7 @@ h1 {
 }
 
 .nav-link:active{
-    color: var(--secondry-color);
+    color: var(--secondry-color) !important;
 }
 
 .navigation-wrap .main-btn{
@@ -272,6 +272,10 @@ h1 {
     padding: 10rem 5rem;
 }
 
+.about img{
+  border-radius: 10px 20px;
+}
+
 /*
 ==========================================
    mission Design
@@ -281,7 +285,6 @@ h1 {
 .mission{
   width: 100%;
   height: 100%;
-
 }
 
 .missions{
@@ -289,8 +292,6 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-
-
 /*
 ==========================================
    service Design
@@ -302,7 +303,7 @@ h1 {
 .service-card{
   max-width: 300px;
   height: 300px;
-  border: 2px solid var(--primary-color);
+  /* border: 2px solid var(--primary-color); */
   text-align: center;
   padding: 2em 2em;
   border-radius: 10px;
@@ -348,4 +349,91 @@ h1 {
 .testimonial-section h2,
 .book-food-text h2 {
   color: var(--primary-color);
+  font-size: 3rem;
+}
+
+
+.company-logo div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.testimonial-section{
+  background-color: var(--primary-color);
+}
+
+.testimonial-section .carousel-inner{
+  height: max-content;
+}
+
+.testimonial-section .carousel-item{
+  margin-top: 3rem;
+  padding: 15rem 3.125rem;
+  background-color:var(--white-color) ;
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+
+.testimonial-section .carousel-caption img{
+  max-width: 5rem;
+  border-radius: 50%;
+  padding: 0.3125rem;
+}
+
+.testimonial-section .carousel-item .carousel-caption p{
+  font-size: 1rem;
+  /* line-height: 2rem; */
+  /* padding: 0 11% 0.625rem; */
+}
+
+.testimonial-section .carousel-indicators{
+  bottom: -2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button{
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1rem;
+  opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button.active{
+  opacity: 1;
+}
+
+
+.call-to-action{
+  width: 100%;
+  background: url("../assets/img/cta.avif") no-repeat center;
+  background-size: cover;
+  background-attachment:fixed ;  /* parallax effect main*/
+  background-position: 0 71.9125px; /* static background position */
+  padding: 4.37rem 0;
+}
+
+
+
+.footer{
+  background-color: var(--primary-color);
+}
+
+.footer .footer-link{
+  font-size: 1rem;
+  color: var(--white-color);
+  padding: 0 1.875rem;
+}
+
+.footer .footer-link:hover{
+  color: var(--black-color) !important;
+}
+
+.footer a i{
+  font-size: 1.5rem;
+  color: var(--white-color);
+  padding: 0 1rem;
 }

@@ -1,0 +1,428 @@
+@media screen and (min-width : 300px) and (max-width : 550px) {
+    .desktop-navbar {
+        display: none;
+    }
+
+    .cta{
+        display: none;
+    }
+
+    .mobile-navbar-right{
+        justify-content: right;
+        padding: 0px 1em;
+    }
+
+    .hamMenu{
+        margin: 0px ;
+    }
+
+    section{
+        padding: 1em;
+    }
+
+    .hero{
+        padding: 0px;
+    }
+
+    .hero-desc{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    .hero-btns{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo-section{
+        width: 100%;
+    }
+
+
+    .about-us{
+        padding: 0px;
+    }
+
+    .about-us-container {
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+
+    .about-us-left{
+        padding: 10px 0px;
+    }
+
+    .about-us-right{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .about-right-container{
+        width: 280px;
+    }
+
+    .about-img-container{
+        width: 280px;
+        left: 0px;
+
+    }
+
+    .about-us-left{
+        width: 100%;
+    }
+
+    .services{
+        padding: 0px;
+        padding-top: 5em;
+    }
+
+    .portfolio{
+        padding: 0px;
+        padding-top: 5em;
+    }
+
+    .portfolio-project{
+        flex-direction: column;
+        gap: 1em;
+        height: 100%;
+    }
+
+    .portfolio-project:nth-child(2), .portfolio-project:nth-child(4){
+        flex-direction: column;
+    }
+
+    .project-desc{
+        width: 100%;
+        height: auto;
+    }
+
+    .project-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact{
+        padding: 0px;
+        padding-top: 5em;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-left{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin-bottom: 2em;
+    }
+
+    .contact-right{
+        width: 100%;
+        height: 500px;
+        padding: 0px;
+    }
+
+
+    .form-container{
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .form-details{
+        grid-template-columns: auto;
+        height: auto;
+    }
+
+    .left-desc-2{flex-direction: column;}
+
+    .footer-top{
+        height: 30%;
+    }
+
+    .footer-nav ul{
+        gap: 20px;
+    }
+
+
+    .footer-text{
+        flex-direction: column;
+    }
+
+    .footer-text p:nth-child(1){
+        border-right: 0px;
+    }
+
+}
+
+
+@media screen and (min-width : 551px) and (max-width : 767px) {
+    .desktop-navbar {
+        display: none;
+    }
+
+    .hero{
+        padding: 0px;
+    }
+
+    .hero-desc{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    .logo-section{
+        width: 90%;
+    }
+
+    .about{
+        padding: 0px;
+    }
+
+    .about-us-container {
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+
+    .about-us-right{
+        width: 100%;
+    }
+
+    .about-right-container{
+        min-width: 400px;
+    }
+
+    .about-img-container{
+        min-width: 300px;
+        right: 0;
+    }
+
+    .about-us-left{
+        width: 100%;
+    }
+
+    .portfolio-project{
+        flex-direction: column;
+        height: 100%;
+        gap: 1em;
+    }
+
+    .portfolio-project:nth-child(2), .portfolio-project:nth-child(4){
+        flex-direction: column;
+    }
+
+    .project-desc{
+        width: 100%;
+        height: auto;
+    }
+
+    .project-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact{
+        padding: 1em;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-left{
+        width: 100%;
+        height: auto
+    }
+
+    .left-desc-2{flex-direction: column;}
+
+    .contact-right{
+        width: 100%;
+        height: 500px;
+    }
+
+
+
+}
+
+@media screen and (min-width : 768px) and (max-width : 999px) {
+    .desktop-navbar {
+        padding: 0px 20px;
+    }
+
+    .mobile-navbar{
+        display: none;
+    }
+
+    .about-us-container {
+        flex-direction: column-reverse;
+    }
+
+    .about-us-right{
+        width: 100%;
+    }
+
+    .about-us-left{
+        width: 100%;
+    }
+
+
+    .about-img-container{
+        right: 0;
+    }
+
+    .portfolio-project{
+        flex-direction: column;
+    }
+
+    .portfolio-project:nth-child(2), .portfolio-project:nth-child(4){
+        flex-direction: column;
+    }
+
+    .project-desc{
+        width: 100%;
+        height: auto;
+    }
+
+    .project-img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-left{
+        width: 100%;
+        height: auto
+    }
+
+    .contact-right{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+
+@media screen and (min-width : 1000px) and (max-width : 1440px) {
+    .desktop-navbar {
+        padding: 0px 3em;
+    }
+
+    .mobile-navbar{
+        display: none;
+    }
+
+    .hero{
+        padding: 2em 3em;
+    }
+
+    section{
+        padding:1em;
+    }
+
+
+
+}
+
+@media screen  and (min-width : 1000px )and (max-width : 1300px) {
+    .about-us-container {
+        flex-direction: column-reverse;
+    }
+
+    .about-us-right{
+        width: 100%;
+    }
+
+    .about-us-left{
+        width: 100%;
+    }
+
+
+    .about-img-container{
+        right: 0;
+    }
+
+
+
+
+    .contact-form{
+        height: 500px;
+    }
+
+    .form-details{
+        grid-template-columns: auto;
+        height: auto;
+    }
+
+    .left-desc-2{
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    footer{
+        height: 200px;
+    }
+
+}
+
+@media screen and (min-width : 1441px) and (max-width : 1920px) {
+    .desktop-navbar {
+        padding: 0px 3em;
+    }
+
+    .mobile-navbar{
+        display: none;
+    }
+
+    .hero{
+        padding-left: 10%;
+    }
+
+    .hero-desc{
+        width: 800px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+
+    .service-card{
+        width: 400px;
+    }
+
+    .portfolio-project{
+      height: 700px;
+
+    }
+
+}
+
+@media screen and (min-width : 1920px){
+    .desktop-navbar {
+        padding: 0px 3em;
+    }
+
+    .mobile-navbar{
+        display: none;
+    }
+}
