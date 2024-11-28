@@ -1,4 +1,8 @@
-@media screen and (max-width : 1400px) {}
+@media screen and (max-width : 1400px) {
+    .about-us-para{
+        font-size: 2.5em;
+    }
+}
 
 
 @media screen and (max-width : 1200px) {
@@ -17,10 +21,17 @@
 }
 
 @media screen and (max-width : 992px) {
-
+    .text-box h1 {
+        font-size: 5em;
+    }
 }
 
 @media screen and (max-width : 768px) {
+
+    .text-box h1 {
+        font-size: 4em;
+    }
+
     .work-card-3 {
         margin-top: 0%;
     }
@@ -36,11 +47,79 @@
     .testimonial-section .carousel-item{
         padding: 20rem 2rem;
     }
+
+    .about-us-para{
+        font-size: 2em;
+        width: 100%;
+
+    }
+
+    .what-we-do-1, .what-we-do-2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .what-we-do-1{
+        margin-left: 1em;
+    }
+
+    .what-we-do-2{
+        margin-left: 4em;
+    }
+
+    /* footer link */
+    .footer .footer-link,
+    .footer a i{
+        padding: 0 0.7rem;
+    }
 }
 
 @media screen and (max-width : 576px) {
 
+    .text-box h1 {
+        font-size: 3.5em;
+    }
+
     .testimonial-section .carousel-item{
         padding: 25rem 2rem;
+    }
+
+    .about-us-para{
+        font-size: 1.2em;
+        line-height: normal;
+        width: 100%;
+    }
+
+    .what-we-do .design-arrow{
+        position: absolute;
+        margin-top: 0rem;
+        margin-left: 2rem;
+      }
+
+    .what-we-do-1, .what-we-do-2{
+        display: flex;
+        justify-content: end;
+    }
+
+    .what-we-do-1{
+        margin-left:  0em;
+    }
+
+    .what-we-do-2{
+        margin-left: 0em;
+    }
+
+    .value-cards{
+        padding: 10px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width : 400px){
+    .what-we-do .design-arrow{
+        margin-left: 1rem;
     }
 }

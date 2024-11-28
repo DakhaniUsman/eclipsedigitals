@@ -59,7 +59,7 @@ body {
 .root{
   width: 100vw;
   min-height: 100vh;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /*
@@ -144,6 +144,7 @@ h1 {
     -o-transition: all .4s ease-out 0s;         /* opera mini */
     -moz-transition: all .4s ease-out 0s;       /* mozilla firefox */
     transition: all .4s ease-out 0s;
+    border-radius: 5px;
   }
 
   .main-btn a{
@@ -164,6 +165,7 @@ h1 {
     -o-transition: all .4s ease-out 0s;
     -moz-transition: all .4s ease-out 0s;
     transition: all .4s ease-out 0s;
+    border-radius: 5px;
   }
 
   .white-btn a {
@@ -219,6 +221,12 @@ h1 {
 .navigation-wrap .nav-item{
     padding: 0 0.6rem;
     transition: all 0.2s linear;
+}
+
+.navbar-toggler{
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 19%);
 }
 
 .navbar-toggler:focus{
@@ -280,6 +288,7 @@ h1 {
     padding: 10rem 5rem;
     background: url(../assets/img/digital-marketing-banner.png) no-repeat center;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .top-banner h1, .top-banner h2, .top-banner p {
@@ -317,7 +326,8 @@ h1 {
 .service-card{
   max-width: 300px;
   height: 300px;
-  border: 2px solid var(--primary-color);
+  /* border: 2px solid var(--primary-color); */
+  box-shadow: 0px 0px 10px #ebebeb ;
   text-align: center;
   padding: 2em 2em;
   border-radius: 10px;
@@ -464,12 +474,13 @@ h1 {
 
 .about-banner{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #000000;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #myVideo{
@@ -494,16 +505,108 @@ h1 {
   font-size: 8rem;
   font-weight: 900;
   color: white !important;
+  text-shadow: 0px 0px 10px #fff;
 }
 
-.value-cards{
+.about-us-para{
+  position: relative;
+  font-size: 3em;
+  line-height: 1.25em;
+  font-weight: 500;
+  text-indent: 3em;
+  width: 100%;
+  text-align: center;
+}
 
-  gap: 1em;
+.about-img{
+  border-radius: 10px;
+}
+
+.what-we-do{
+  position: relative;
+}
+
+
+.what-we-do p b{
+  letter-spacing: 4px;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.what-we-do .design-arrow{
+  position: absolute;
+  margin-top: -2rem;
+  margin-left: 5rem;
+}
+
+.what-we-do ul{
+  list-style-type: square;
+}
+
+
+
+.value-cards{
+  gap: 2em;
 }
 
 .value-card{
   padding: 2em 1em;
-  background-color: #e4e3e3;
-  box-shadow: 0px 0px 10px #aaa;
+  background-color: #f3f4f6;
+  box-shadow: 0px 0px 10px #ebebeb;
   border-radius: 10px;
+}
+
+.team-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+#team{
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 3em;
+}
+
+.team-card{
+  position: relative;
+  max-width: 400px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card img{
+  border-radius: 10px;
+}
+
+.card-info{
+  position: relative;
+  width: 80%;
+  /* border: 1px solid black; */
+  top: -1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  /* background-color: #f3f4f6; */
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ebebeb;
+
+}
+
+.card-info p{
+  margin-bottom: 0;
+}
+
+.card-info .name {
+  font-weight: 600;
+  color: var(--black-color);
+}
+
+.team-detail{
+  width: 100%;
+  height: 100%;
 }
