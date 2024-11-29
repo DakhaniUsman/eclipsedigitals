@@ -610,3 +610,46 @@ h1 {
   width: 100%;
   height: 100%;
 }
+
+#service{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-banner h1{
+  font-size: 5em;
+}
+
+.service-image{
+  border-radius: 10px;
+}
+
+.service-container{
+  height: 100%;
+  padding: 2em 1em;
+}
+
+.service-cards img{
+  width: 60px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.service-card-heading{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--black-color);
+}
+
+.single-service{
+  height: auto;
+  background-color: #1e1e1e;
+}
+
+.single-service-desc{
+  padding: 3em 4em;
+  margin: auto;
+  color: var(--white-color);
+}
