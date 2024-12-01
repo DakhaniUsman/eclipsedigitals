@@ -54,10 +54,11 @@ body {
   font-family: var(--primary-font);
   font-size: 100%;
   font-weight: 400;
+
 }
 
 .root{
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
 }
