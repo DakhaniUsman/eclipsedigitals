@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Marcellus&family=Syne:wght@400;500;600;700;800&family=Aladin&display=swap"); */
 
 *,
 *:after,
@@ -240,7 +241,7 @@ h1 {
 .nav-link{
     font-size: 0.9rem;
     font-weight: 600;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: var(--primary-color);
     letter-spacing: 1px;
 }
@@ -287,18 +288,22 @@ h1 {
     width: 100%;
     min-height: 100vh;
     padding: 10rem 5rem;
-    background: url(../assets/img/digital-marketing-banner.png) no-repeat center;
+    background: url(../assets/img/banner-2.png) no-repeat center;
     background-size: cover;
     overflow-x: hidden;
 }
-
+/*
 .top-banner h1, .top-banner h2, .top-banner p {
   color: var(--white-color) !important;
+} */
+
+
+.top-banner h1{
+  font-size: 4rem;
 }
 
-
 .about img{
-  border-radius: 10px 20px;
+  border-radius: 5px 50px;
 }
 
 /*
@@ -383,6 +388,10 @@ h1 {
   align-items: center;
 }
 
+.why-us-section img {
+  border-radius: 50px 5px;
+}
+
 
 .testimonial-section{
   background-color: var(--primary-color);
@@ -398,7 +407,7 @@ h1 {
 
 .testimonial-section .carousel-item{
   margin-top: 3rem;
-  padding: 15rem 3.125rem;
+  padding: 10rem 3.125rem;
   background-color:var(--white-color) ;
   border-radius: 0.9375rem;
   text-align: center;
@@ -437,7 +446,7 @@ h1 {
 
 .call-to-action{
   width: 100%;
-  background: url("../assets/img/cta.avif") no-repeat center;
+  background: url("../assets/img/cta.png") no-repeat center;
   background-size: cover;
   background-attachment:fixed ;  /* parallax effect main*/
   background-position:center; /* static background position */
@@ -476,14 +485,14 @@ h1 {
 .about-banner{
   width: 100%;
   height: 100vh;
-  background-color: #000;
+  background-color: #000000;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  filter: brightness(100%);
 }
+
 
 /* .about-banner::before{
   content: "";
@@ -504,20 +513,20 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,1);
+  background: rgba(0,0,0,0.5);
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
 }
 
 .text-box h1 {
   font-size: 8rem;
   font-weight: 900;
   color: white !important;
-  text-shadow: 0px 0px 10px #fff;
+  text-shadow: 0px 0px 5px #fff;
 }
 
 .about-us-para{
@@ -531,7 +540,7 @@ h1 {
 }
 
 .about-img{
-  border-radius: 10px;
+  border-radius: 50px 10px;
 }
 
 .what-we-do{
@@ -565,7 +574,7 @@ h1 {
   padding: 2em 1em;
   background-color: #f3f4f6;
   box-shadow: 0px 0px 10px #ebebeb;
-  border-radius: 10px;
+  border-radius: 50px 10px;
 }
 
 .team-section{
@@ -635,12 +644,15 @@ h1 {
 }
 
 .service-image{
-  border-radius: 10px;
+  border-radius: 10px 50px;
+
 }
 
 .service-container{
   height: 100%;
   padding: 2em 1em;
+  background-color: var(--primary-color);
+
 }
 
 .service-cards img{
@@ -657,12 +669,11 @@ h1 {
 
 .single-service{
   height: auto;
-  background-color: #1e1e1e;
   padding: 2em;
 }
 
 .single-service img{
-  border-radius: 10px;
+  border-radius: 50px 10px;
 }
 
 .single-service-desc{
@@ -674,4 +685,48 @@ h1 {
 .single-service-desc p {
   width: 60%;
   color: var(--white-color);
+}
+
+.contact-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.contact-heading{
+  font-size: 7rem;
+}
+
+.input-labels{
+  font-size: 1.2rem;
+}
+
+.input-fields{
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 2px solid var(--secondry-color);
+  margin-bottom: 2em;
+}
+
+.input-fields::placeholder{
+  font-size: 1.2rem;
+  color: var(--text-gray);
+}
+
+
+.contact-quote{
+  height: 300px;
+  background: url("../assets/img/contact-bg.png") no-repeat center;
+  background-size: cover;
+}
+
+.contact-quote-para{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  line-height: 1.3em;
 }

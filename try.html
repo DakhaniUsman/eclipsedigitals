@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Scroll Effect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent default scrolling */
+    }
+    .content {
+      height: 300vh; /* Making the page tall for scrolling */
+      background: linear-gradient(to bottom, #4ADE80, #3B82F6);
+    }
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+    <h1>Smooth Scrolling Effect</h1>
+
+  </div>
+  <script>
+    // Initialize variables for current scroll and target scroll
+    let currentScroll = 0;
+    let targetScroll = 0;
+
+    // Smooth scrolling animation function
+    function smoothScroll() {
+      currentScroll += (targetScroll - currentScroll) * 0.1; // Adjust smoothness by changing 0.1
+      window.scrollTo(0, currentScroll); // Apply the calculated scroll position
+      requestAnimationFrame(smoothScroll); // Continuously animate
+    }
+
+    // Update target scroll on wheel scroll
+    window.addEventListener('wheel', (event) => {
+      targetScroll += event.deltaY; // Add wheel scroll delta to target scroll
+    });
+
+    // Start the smooth scrolling
+    smoothScroll();
+  </script>
+</body>
+</html>

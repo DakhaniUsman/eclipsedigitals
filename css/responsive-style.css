@@ -6,6 +6,10 @@
     .service-banner h1{
         font-size: 3.5em;
     }
+
+    .contact-heading{
+        font-size: 6.5rem;
+    }
 }
 
 
@@ -26,11 +30,23 @@
     .service-banner h1{
         font-size: 2.6em;
     }
+
+    .single-service-desc p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width : 992px) {
     .text-box h1 {
         font-size: 5em;
+    }
+
+    .message .what-we-do{
+        display: none;
+    }
+
+    .single-service:nth-child(2), .single-service:nth-child(4){
+        flex-direction: column-reverse;
     }
 }
 
@@ -53,7 +69,7 @@
     }
 
     .testimonial-section .carousel-item{
-        padding: 20rem 2rem;
+        padding: 12rem 2rem;
     }
 
     .about-us-para{
@@ -75,6 +91,14 @@
         margin-left: 4em;
     }
 
+    .contact-heading{
+        font-size: 5rem;
+    }
+
+    .contact-quote-para{
+        font-size: 2rem;
+    }
+
     /* footer link */
     .footer .footer-link,
     .footer a i{
@@ -85,17 +109,35 @@
 @media screen and (max-width : 576px) {
 
     .text-box h1 {
-        font-size: 3.5em;
+        font-size: 4em;
     }
 
     .testimonial-section .carousel-item{
-        padding: 25rem 2rem;
+        padding: 15rem 2rem;
     }
 
     .about-us-para{
         font-size: 1.2em;
         line-height: normal;
         width: 100%;
+    }
+
+    #service-desc h2{
+        font-size: 2rem;
+        line-height: 1.5em;
+    }
+
+    .single-service{
+        padding: 2em 1em;
+    }
+
+    .single-service img{
+        /* border: 1px solid white; */
+        box-shadow: 0px 0px 10px #fff;
+    }
+
+    .single-service-desc{
+        padding: 3em 1em;
     }
 
     .what-we-do .design-arrow{
@@ -121,6 +163,10 @@
         padding: 10px;
     }
 
+    .contact-heading{
+        font-size: 4rem;
+    }
+
 
 
 }
@@ -129,5 +175,9 @@
 @media screen and (max-width : 400px){
     .what-we-do .design-arrow{
         margin-left: 1rem;
+    }
+
+    .testimonial-section .carousel-item{
+        padding: 18rem 0rem;
     }
 }
