@@ -122,6 +122,10 @@
         width: 100%;
     }
 
+    .services h2{
+        font-size: 2rem;
+    }
+
     #service-desc h2{
         font-size: 2rem;
         line-height: 1.5em;
