@@ -292,10 +292,14 @@ h1 {
     background-size: cover;
     overflow-x: hidden;
 }
-/*
-.top-banner h1, .top-banner h2, .top-banner p {
-  color: var(--white-color) !important;
-} */
+
+
+
+
+
+ .top-banner h2 {
+  color: grey !important;
+}
 
 
 .top-banner h1{
