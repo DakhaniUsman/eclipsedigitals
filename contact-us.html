@@ -1,147 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eclipse Digitals - Digital Marketing Agency</title>
 
-
     <!-- bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
 
     <!-- font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
 
     <!-- own CSS -->
-     <link rel="stylesheet" href="./css/style.css">
-     <link rel="stylesheet" href="./css/responsive-style.css">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive-style.css" />
+  </head>
+  <body>
     <div class="root">
+      <!-- header -->
 
-
-     <!-- header -->
-
-     <header>
+      <header>
         <nav class="navbar navbar-expand-lg navigation-wrap">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <!-- <img src="./images/logo.png" alt="foodies"> -->
-                 Eclipse Digitals
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/img/logo-1.png"
+                alt="eclipse digitals"
+                width="100px"
+              />
             </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./about-us.html">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./service.html">Services</a>
-                  </li>
-                  <!-- <li class="nav-item">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./service.html">Services</a>
+                </li>
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="./portfolio.html">Portfolio</a>
                   </li> -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact-us.html">Contact Us</a>
-                  </li>
-                  <li><button class="main-btn">
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <button class="main-btn">
                     <a href="">1200 345 123</a>
-                  </button></li>
-                </ul>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section id="contact">
+        <div class="container wrapper contact-container">
+          <div class="row py-3">
+            <p>Eclipse Digitals</p>
+            <h1 class="contact-heading">Get in touch</h1>
+          </div>
+          <div class="row message">
+            <div class="col-lg-6 what-we-do">
+              <p>
+                <b>SEND A MESSAGE</b> <br />
+                CONTACT US
+              </p>
+              <img
+                src="./assets/img/design-arrow.png"
+                alt="design arrow"
+                class="img-fluid design-arrow"
+              />
+            </div>
+            <div class="col-lg-6">
+              <form action="" class="form">
+                <label class="input-labels" for="name">Name</label>
+                <br />
+                <input
+                  class="input-fields w-100"
+                  type="text"
+                  placeholder="John Doe"
+                />
+                <br />
+                <label class="input-labels" for="name">Email</label>
+                <br />
+                <input
+                  class="input-fields w-100"
+                  type="text"
+                  placeholder="your@email.com"
+                />
+                <br />
+                <label class="input-labels" for="name">Message</label>
+                <br />
+                <textarea
+                  class="input-fields w-100"
+                  name="message"
+                  rows="4"
+                  cols="40"
+                  style="resize: none"
+                  placeholder="Tell Us About Your Project"
+                ></textarea>
+                <br />
+                <button class="main-btn w-100">
+                  <a href="#">Send Message</a>
+                </button>
+                <br />
+              </form>
+            </div>
+          </div>
+          <div
+            class="row mt-4 mx-auto wrapper d-flex align-items-center justify-content-center"
+          >
+            <div class="col-lg-8 contact-quote mx-auto">
+              <p class="contact-quote-para w-80 text-center">
+                Or, you can contact us directly through our contact number. We
+                aim to respond within 24 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="footer py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <a class="footer-link" href="./index.html">Home</a>
+                <a class="footer-link" href="./about-us.html">About Us</a>
+                <a class="footer-link" href="./service.html">Services</a>
+                <!-- <a class="footer-link" href="./portfolio.html">Portfolio</a> -->
+                <div class="footer-social pt-4 text-center">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="footer-copy">
+                  <div class="copy-right text-center pt-5">
+                    <p class="text-light">
+                      © 2024. Eclipse Digitals. All rights reserved.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </nav>
-     </header>
-
-
-    <section id="contact">
-      <div class="container wrapper contact-container ">
-        <div class="row py-3 ">
-          <p>Eclipse Digitals</p>
-          <h1 class="contact-heading">Get in touch</h1>
-        </div>
-        <div class="row message">
-          <div class="col-lg-6 what-we-do">
-            <p><b>SEND A MESSAGE</b> <br>  CONTACT US</p>
-            <img src="./assets/img/design-arrow.png" alt="design arrow" class="img-fluid design-arrow">
-          </div>
-          <div class="col-lg-6">
-            <form action="" class="form">
-              <label class="input-labels" for="name">Name</label>
-              <br>
-              <input class="input-fields w-100" type="text" placeholder="John Doe" >
-              <br>
-              <label class="input-labels" for="name">Email</label>
-              <br>
-              <input class="input-fields w-100" type="text" placeholder="your@email.com">
-              <br>
-              <label class="input-labels" for="name">Message</label>
-              <br>
-              <textarea class="input-fields w-100" name="message" rows="4" cols="40" style="resize: none;" placeholder="Tell Us About Your Project"></textarea>
-              <br>
-              <button class="main-btn w-100">
-                <a href="#">Send Message</a>
-              </button>
-              <br>
-            </form>
           </div>
         </div>
-        <div class="row mt-4 mx-auto wrapper d-flex align-items-center justify-content-center">
-          <div class="col-lg-8 contact-quote mx-auto">
-            <p class="contact-quote-para w-80 text-center">
-              Or, you can contact us directly through our contact number. We aim to respond within 24 hours.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="footer">
-    <div class="footer py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <a class="footer-link" href="./index.html">Home</a>
-            <a class="footer-link" href="./about-us.html">About Us</a>
-            <a class="footer-link" href="./service.html">Services</a>
-            <!-- <a class="footer-link" href="./portfolio.html">Portfolio</a> -->
-            <div class="footer-social pt-4 text-center">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="footer-copy">
-              <div class="copy-right text-center pt-5">
-                <p class="text-light">
-                  © 2024. Eclipse Digitals. All rights reserved.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
-  </section>
-</div>
 
+    <!-- JS  Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
-
-<!-- JS  Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-
-<!-- own JS -->
-<script src="./js/main.js"></script>
-</body>
+    <!-- own JS -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>

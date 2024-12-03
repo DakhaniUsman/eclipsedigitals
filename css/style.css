@@ -735,3 +735,8 @@ h1 {
   font-size: 3rem;
   line-height: 1.3em;
 }
+
+::selection{
+  color: white;
+  background:black;
+}
