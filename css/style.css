@@ -523,11 +523,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
   /* mix-blend-mode: multiply; */
 }
 
 .text-box h1 {
-  font-size: 8rem;
+  font-size: 5rem;
   font-weight: 900;
   color: white !important;
   margin-bottom: 0;
@@ -536,12 +537,12 @@ h1 {
 
 .about-us-para{
   position: relative;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.25em;
   font-weight: 500;
   text-indent: 3em;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .about-img{
@@ -645,7 +646,7 @@ h1 {
 }
 
 .service-banner h1{
-  font-size: 5em;
+  font-size: 4.5em;
 }
 
 .service-image{
@@ -656,7 +657,7 @@ h1 {
 .service-container{
   height: 100%;
   padding: 2em 1em;
-  background-color: var(--primary-color);
+  background-color: var(--secondry-color);
 
 }
 
@@ -690,6 +691,11 @@ h1 {
 .single-service-desc p {
   width: 60%;
   color: var(--white-color);
+}
+
+.single-service-desc ul{
+  list-style-type: square;
+  padding-left: 2em;
 }
 
 .contact-container{
