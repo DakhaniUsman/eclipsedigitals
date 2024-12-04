@@ -178,6 +178,7 @@
 
 
 @media screen and (max-width : 400px){
+
     .what-we-do .design-arrow{
         margin-left: 1rem;
     }
@@ -185,4 +186,10 @@
     .testimonial-section .carousel-item{
         padding: 18rem 0rem;
     }
+
+    #service-desc h2{
+        font-size: 1.7rem;
+        line-height: 1.5em;
+    }
+
 }

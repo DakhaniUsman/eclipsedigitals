@@ -64,6 +64,20 @@ body {
   overflow-x: hidden;
 }
 
+/* On Scroll Animation CSS */
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Visible and animated */
+.animate {
+  visibility: visible;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
 /*
 =========================================
     Custom Scrollbar
@@ -296,15 +310,31 @@ h1 {
 
 
 
-
- .top-banner h2 {
-  color: grey !important;
-}
-
-
-.top-banner h1{
+#home.animate .top-banner h1{
   font-size: 4rem;
+  animation: bounceInDown 1s ease forwards;
 }
+
+#home.animate .top-banner h2 {
+  color: grey !important;
+  animation: bounceInLeft 1s ease forwards;
+
+}
+
+#home.animate .top-banner p{
+  animation: bounceInUp 1s ease forwards;
+}
+
+#home.animate .top-banner button:nth-child(1){
+  animation: fadeIn 1s ease forwards;
+}
+
+#home.animate .top-banner button:nth-child(2){
+  animation: fadeIn 1s ease forwards;
+}
+
+
+
 
 .about img{
   border-radius: 5px 50px;
@@ -371,6 +401,7 @@ h1 {
 .service-card > ul > li {
   margin-bottom: 10px;
 }
+
 
 .work-container{
   display: flex;
