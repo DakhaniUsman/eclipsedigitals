@@ -14,6 +14,8 @@
 
 
 @media screen and (max-width : 1200px) {
+
+
     .work-card-3 {
         margin-top: -15%;
     }
@@ -26,6 +28,10 @@
     .work-card-6{
         margin-top: -45%;
     }
+
+    .company-logo .img-fluid{
+        max-width: 95%;
+      }
 
     .service-banner h1{
         font-size: 2.6em;

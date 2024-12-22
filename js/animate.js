@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(
                 observer.unobserve(entry.target);
             }
         });
-    },{threshold : 0.2} // trigger when 20% of the element is visible
+    },{threshold : 0.35} // trigger when 20% of the element is visible
 );
 
 hiddenElements.forEach(element => {
